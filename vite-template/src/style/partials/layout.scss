@@ -1,0 +1,20 @@
+// ------------------------
+//         LAYOUT
+// ------------------------
+.container {
+    max-width: 1200px;
+    margin: auto;
+}    
+.container-small{
+    max-width: 43.75rem;
+    margin: auto;
+}
+.box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // .inner-box{
+
+    // }
+}
+
