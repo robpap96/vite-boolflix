@@ -1,8 +1,7 @@
 <script>
-//import AppName  from './....AppName.vue'
 
 export default {
-    name: 'AppFooter',
+    name: 'AppCard',
     components: {
 
     },
@@ -20,7 +19,6 @@ export default {
 </script>
 
 <template>
-    <!-- <AppName/> -->
 </template>
 
 <style scoped>

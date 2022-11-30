@@ -18,3 +18,5 @@ PER FONTAWESOME
  in CMD {
     
  }
+
+ TMDB api key api_key=855b32a225edd597704e4c0ca5c50972

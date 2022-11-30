@@ -1,10 +1,10 @@
 <script>
-//import AppName  from './....AppName.vue'
+import AppCard from './AppCard.vue';
 
 export default {
     name: 'AppMain',
     components: {
-
+        AppCard,
     },
     defineProps :{
         //msg: String
@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-    <!-- <AppName/> -->
+    <AppCard/>
 </template>
 
 <style scoped>
