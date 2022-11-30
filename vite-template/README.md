@@ -1,7 +1,20 @@
 # Vue 3 + Vite
+COMANDI BASE DA LANCIARE PER AVVIARE IL PROGETTO
+ in CMD{
+  --> cd activeDirectiory
+   --> npm install
+    --> npm run dev
+     --> npm add -D sass
+ }
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
-## Recommended IDE Setup
+PER BOOTSTRAP
+ in CMD{
+ --> npm install bootstrap
+ }
+  --> decommentare in global.scss
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+PER FONTAWESOME
+ in CMD {
+    
+ }
