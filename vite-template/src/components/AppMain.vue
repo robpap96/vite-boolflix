@@ -1,17 +1,20 @@
 <script>
-import AppCard from './AppCard.vue';
+import AppCardFilm from './AppCardFilm.vue';
+import AppCardSerie from './AppCardSerie.vue';
+import { store } from '../store';
 
 export default {
     name: 'AppMain',
     components: {
-        AppCard,
+        AppCardFilm,
+        AppCardSerie,
     },
-    defineProps :{
+    Props :{
         //msg: String
     },
     data(){
         return {
-            //
+            store,
         }
     },
 
@@ -20,7 +23,14 @@ export default {
 </script>
 
 <template>
-    <AppCard/>
+<!-- v-if="this.store.category === 'Film'" -->
+    <div v-if="this.store.category === 'Film'">
+        <AppCardFilm v-for="film in store.film" :info="film" />
+    </div>
+    <div v-else="this.store.category === 'Serie'">
+        <AppCardSerie v-for="serie in store.serieTv" :info="serie" />
+
+    </div>
 </template>
 
 <style scoped>
