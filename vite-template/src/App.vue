@@ -1,5 +1,4 @@
 <script>
-// import { ITERATE_KEY } from '@vue/reactivity';
 import AppHeader from './components/AppHeader.vue'
 import AppMain from './components/AppMain.vue'
 import {store} from "./store";
@@ -24,7 +23,6 @@ export default {
                 }) 
                 .then((resp) => {
                 this.store.film = resp.data.results;
-                
                 })
 
             } else {
