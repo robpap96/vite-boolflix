@@ -9,6 +9,13 @@ export default {
     props :{
         info: Object,
     },
+    methods: {
+        getFlag(lang){
+            if(lang == "en"){
+                return "gb";
+            }
+        }
+    },
     data(){
         return {
             //
@@ -22,7 +29,7 @@ export default {
 <template>
     <ul>
         <li >{{info.title}}</li>
-        <li><CountryFlag :country='info.original_language' size='normal'/></li>
+        <li><CountryFlag :country='getFlag(info.original_language) ' size='normal'/></li>
         <li >{{info.vote_average}}</li>
     </ul>
 
