@@ -1,9 +1,10 @@
 <script>
- 
+import CountryFlag from 'vue-country-flag-next'
+
 export default {
     name: 'AppCardSerie',
     components: {
-
+        CountryFlag,
     },
     props :{
         info: Object,
@@ -21,7 +22,7 @@ export default {
 <template>
         <ul>
             <li >{{info.name}}</li>
-            <li >{{info.original_language}}</li>
+            <li><CountryFlag :country='info.original_language' size='normal'/></li>
             <li >{{info.vote_average}}</li>
         </ul>
 

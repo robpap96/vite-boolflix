@@ -9,7 +9,7 @@ export default {
         AppCardFilm,
         AppCardSerie,
     },
-    Props :{
+    props :{
         //msg: String
     },
     data(){
@@ -23,13 +23,11 @@ export default {
 </script>
 
 <template>
-<!-- v-if="this.store.category === 'Film'" -->
     <div v-if="this.store.category === 'Film'">
         <AppCardFilm v-for="film in store.film" :info="film" />
     </div>
     <div v-else="this.store.category === 'Serie'">
         <AppCardSerie v-for="serie in store.serieTv" :info="serie" />
-
     </div>
 </template>
 
