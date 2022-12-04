@@ -1,17 +1,11 @@
-<script>
-import AppHeader from "./components/AppHeader.vue";
-import AppMain from "./components/AppMain.vue";
+<!-- <script>
 import { store } from "./store";
 import axios from "axios";
 
 export default {
-  name: "App",
-  components: {
-    AppHeader,
-    AppMain,
-  },
-  methods: {
-    getData(category) {
+    name: 'TopSection',
+    created: {
+        getData(category) {
       if (category === "Film") {
         axios
           .get("https://api.themoviedb.org/3/search/movie", {
@@ -39,27 +33,17 @@ export default {
           });
       }
     },
-  },
-  data() {
-    return {
-      store,
-    };
-  },
-};
-</script>
-
-<template>
-    <header>
-        <AppHeader @performSearch="getData(this.store.category)" />
-    </header>
-    <main>
-        <AppMain />
-    </main>
-</template>
-
-<style lang="scss">
-@import "./style/global.scss";
-body {
-    background-color: rgb(20, 20, 20)
+},
+data() {
+  return {
+    store,
+  };
+},
 }
-</style>
+</script>
+<template>
+
+</template>
+<style lang="scss" scoped>
+
+</style> -->
