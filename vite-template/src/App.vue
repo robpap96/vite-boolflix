@@ -60,6 +60,6 @@ export default {
 <style lang="scss">
 @import "./style/global.scss";
 main {
-    background-color: rgb(82, 82, 82);
+    background-color: rgb(20, 20, 20)
 }
 </style>

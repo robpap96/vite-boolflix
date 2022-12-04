@@ -64,7 +64,7 @@ export default {
     width: calc(100%/4 - 40px);
     padding: 20px;
     img{
-        height: 100%;
+        height: 500px;
     }
 }
 </style>
